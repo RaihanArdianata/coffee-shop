@@ -1,15 +1,17 @@
+import React from 'react'
 import Header from '../components/Navigation/Header.components'
-import HomeSection from '../components/Sections/Home.sections'
+import Private from '../components/Sections/Private.section'
 import styles from '../styles/Home.module.css'
-import "@fontsource/darker-grotesque"
 
-export default function Home() {
+function GetHere() {
   return (
     <div className={styles.container}>
       <Header/>
-      <div className='md:py-48'>
-        <HomeSection/>
+      <div className='md:py-48 flex justify-center'>
+          <Private/>
       </div>
     </div>
   )
 }
+
+export default GetHere
